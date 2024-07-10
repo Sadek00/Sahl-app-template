@@ -1,0 +1,1 @@
+# .net8-app-template
