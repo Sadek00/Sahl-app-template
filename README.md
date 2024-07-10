@@ -1,1 +1,1 @@
-# .net8-app-template
+# Sahl-app-template
