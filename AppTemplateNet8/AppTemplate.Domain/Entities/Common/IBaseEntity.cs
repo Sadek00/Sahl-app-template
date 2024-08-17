@@ -14,7 +14,8 @@ namespace AppTemplate.Domain.Entities.Common
         public DateTime? CreatedAt { get; set; }
         public int? UpdatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }        
-        public int StatusId { get; set; }
+        public int? StatusId { get; set; }
+        public string Identifier { get; set; } = Guid.NewGuid().ToString();
     }
     public abstract class BaseEntityWithoutUpdate
     {

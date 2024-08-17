@@ -12,5 +12,6 @@ namespace AppTemplate.Domain.Entities.Admin
     {
         [Required]
         public required string Name { get; set; }
+        public int? Power { get; set; }
     }
 }
