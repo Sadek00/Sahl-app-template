@@ -72,9 +72,9 @@ namespace AppTemplate.Dto.Validators.Admin
             //.Must(ContainsValidPrefix).WithMessage("contain a valid prefix (017 or 018 or 019 or 015 or 016 or 013)");
 
             //Validation for Id
-            RuleFor(obj => obj.TeamId).NotEmpty()
-                .WithMessage("{PropertyName} is required")
-                .GreaterThan(0).WithMessage("{PropertyName} must be greater than zero.");
+            //RuleFor(obj => obj.TeamId).NotEmpty()
+            //    .WithMessage("{PropertyName} is required")
+            //    .GreaterThan(0).WithMessage("{PropertyName} must be greater than zero.");
 
             //Validation for Id
             RuleFor(obj => obj.UserTypeId).NotEmpty()

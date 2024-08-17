@@ -48,7 +48,7 @@ namespace AppTemplate.Service.Implementation.Admin
         {
             var user = _mapper.Map<ApplicationUser>(model);
             user.CreatedAt = CommonMethods.GetBDCurrentTime();
-            user.CreatedBy = Convert.ToInt32(_tokenService.GetUserMappingIdFromToken());
+            //user.CreatedBy = Convert.ToInt32(_tokenService.GetUserMappingIdFromToken());
             user.StatusId = (int)StatusId.Active;
 
             var loginId = GetCurrentUser().Id;
